@@ -4,7 +4,7 @@ function mostrar()
 	//No salir de la funcion { }//
 	//blah blah; //
 	//W3E school practicar//
-	alert(Esto funciona de maravilla);
+	alert ("Esto fue heackeado");
 
 
 
