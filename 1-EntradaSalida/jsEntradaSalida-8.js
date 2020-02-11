@@ -14,9 +14,9 @@ function SacarResto()
 	primerNumero = parseInt (primerNumero);
 	segundoNumero = parseInt (segundoNumero);
 
-	resultado = primerNumero % segundoNumero;
+	resultado = primerNumero / segundoNumero;
 
-	console.log(resultado)
+	alert ("El resto es "+resultado);
 
 
 

@@ -10,13 +10,11 @@ function sumar()
 	//variables no pueden empezar con numeros, no pueden tener espacio//
 
 	primerNumero=document.getElementById('numeroUno').value;
-	primerNumero=parseint(PrimerNumero)
+	primerNumero=parseInt(primerNumero);
 	segundoNumero=document.getElementById('numeroDos').value;
-	segundoNumero=parseint(segundoNumero)
+	segundoNumero=parseInt(segundoNumero);
 
 	resultado = primerNumero + segundoNumero;
-
-	
 
 	alert ("La suma es " + resultado);
 	
@@ -28,7 +26,7 @@ function sumar()
 
 	//parseInt("2"); lo devuelve nuevo=parseInt("2");//
 	//sobreescribe la memoria (la variable) PrimerNumero=parseint(primerNumero)//
-
+}
 function restar()
 {
 	var primerNumero;
@@ -36,11 +34,12 @@ function restar()
 	var resultado;
 
 	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
 	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
 
-	resultado = primerNumero - segundoNumero;
-
-	console.log (resultado);
+	resultado=primerNumero-segundoNumero;
+	alert ("La resta es "+resultado);
 	//sources es el codigo que se ejecuta f12 sacar consola//
 	//agregar un breack point y apretar f11 para debugear//
 
@@ -54,11 +53,13 @@ function multiplicar()
 	var resultado;
 
 	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
 	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
 
 	resultado = primerNumero * segundoNumero;
 
-	console.log (resultado);
+	alert ("La multiplicación es "+resultado);
 
 }
 
@@ -69,11 +70,11 @@ function dividir()
 	var resultado;
 
 	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
 	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
 
-	resultado = primerNumero % segundoNumero;
+	resultado = primerNumero / segundoNumero;
 
-	console.log (resultado);
-
+	alert ("La división es "+resultado);
 }
-

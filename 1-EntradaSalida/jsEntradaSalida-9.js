@@ -6,16 +6,12 @@ function mostrarAumento()
 {
 
 	var sueldo;
-	var RESULTADO;
+	var resultado;
 	
 	sueldo = document.getElementById('sueldo').value;
 	sueldo = parseInt (sueldo);
 
-	RESULTADO = sueldo * 0.10 + sueldo;
+	resultado = sueldo * 0.10 + sueldo;
 
-	document.getElementById('resultado').value= RESULTADO;
-
-	console.log (RESULTADO);
-	//EL ORDEN ES SUPER IMPORTANTE
-
+	document.getElementById('resultado').value= resultado;
 }
