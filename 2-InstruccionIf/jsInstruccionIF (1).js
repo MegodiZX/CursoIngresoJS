@@ -9,10 +9,9 @@ function mostrar()
 //la parabra false sin comillas es (falso) y cualquier palabra en "" es verdadero () incluso NaN o undefined dan verdadero
 //doble igual y sin punto y coma
 	var edad;
-	document.getElementById('edad').value=edad;
+	edad=document.getElementById('edad').value;
 	if(edad==15)
 	{
-
-		alert ("algo");
+		alert ("Kawaii chibi-san");
 	}
 }//FIN DE LA FUNCIÓN

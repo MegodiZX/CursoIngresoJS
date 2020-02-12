@@ -6,10 +6,13 @@ function mostrar()
 	edad=parseInt(edad);
 	if(edad>17)
 	{
-		alert("no es adolecente");
+		alert("No es adolecente");
+	}
+	else
+	{
 		if(edad<13)
 		{
-			alert("no es adolecente");
+			alert("No es adolecente");
 		}	
 	}
 //union de subconjunto

@@ -8,7 +8,7 @@ function mostrar()
 	{
 		if(edad>"12")
 		{
-			alert("adolecente");
+			alert("Adolecente");
 		}
 	}
 	//INTERCEPCION DE CONJUNTOS
