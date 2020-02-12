@@ -16,7 +16,7 @@ function mostrar()
 		}	
 	}
 //union de subconjunto
-//if(edad>17//edad<12) esto trabaja por cortosicuito la de arriba evalua las 2 condiciones
+//if(edad>17||edad<12) esto trabaja por cortosicuito la de arriba evalua las 2 condiciones
 //if(!(edad>12&&edad<18)) el anterior negandolo
-//if(!(edad>17//edad<12)) negado
+//if(!(edad>17||edad<12)) negado
 }//FIN DE LA FUNCIÓN
