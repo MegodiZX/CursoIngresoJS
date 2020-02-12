@@ -41,7 +41,7 @@ function CalcularPrecio ()
  		}
  		if(cantidadL==4)
  		{
- 			if(marca=="ArgentinaLuz"||"FelipeLamparas")
+ 			if(marca=="ArgentinaLuz"||marca=="FelipeLamparas")
  			{
  				precioDescuento=precioFinal/25;
  				document.getElementById('precioDescuento').value=precioDescuento;
