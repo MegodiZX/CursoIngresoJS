@@ -5,9 +5,10 @@ function mostrar()
 	//blah blah; //
 	//W3E school practicar//
 	alert ("Esto fue heackeado");
-
-
-
+	//testeando git
+	//todos los cambios de guardan
+	//use (opcional) run (obligatorio)
+	//git add . (subir a git)
 
 }
 
