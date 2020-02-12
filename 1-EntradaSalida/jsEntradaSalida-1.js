@@ -12,5 +12,7 @@ function mostrar()
 	//paso 2)git commit ("sacar foto") solo despues del git add .
 	//git commit -m "el comentario impoertante de subida a github"
 	//"ctrl + C" arregla la consola
+	//paso 3) git push (solamente si estas seguro de que todo esta bien)
+	// git pool (actualiza archivos)
 }
 
