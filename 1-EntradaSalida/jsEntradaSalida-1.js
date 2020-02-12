@@ -8,7 +8,9 @@ function mostrar()
 	//testeando git
 	//todos los cambios de guardan
 	//use (opcional) run (obligatorio)
-	//git add . (subir a git)
-
+	//paso 1)git add . (subir a git) recibe archivo
+	//paso 2)git commit ("sacar foto") solo despues del git add .
+	//git commit -m "el comentario impoertante de subida a github"
+	//"ctrl + C" arregla la consola
 }
 
