@@ -10,15 +10,59 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	var cantidadL;
+	var cantidadL;
+ 	var precioBruto;
+ 	var descuento;
+ 	var resultado;
+ 	var marca;
+ 	var impuesto;
+
+ 	marca=document.getElementById('Marca').value;
+ 	cantidadL=document.getElementById('Cantidad').value;
+ 	cantidadL=parseInt(cantidadL);
+ 	precioBruto=cantidadL*35;
+ 	descuento=0;
+
+ 	if(cantidadL>5)
+ 	{
+ 		descuento=50;
+ 	}else
+ 	{
+ 		if(cantidadL==5&&marca=="ArgentinaLuz")
+ 		{
+ 			descuento=40;
+ 		}else
+ 		{
+ 			descuento=30;
+ 		}
+ 		if(cantidadL==4&&marca=="ArgentinaLuz"||marca=="FelipeLamparas")
+ 		{
+ 			descuento=25;
+ 		}else
+ 		{
+ 			descuento=20;
+ 		}
+ 		if(cantidadL==3&&marca=="ArgentinaLuz")
+ 		{
+ 			descuento=15;
+ 		}else
+ 			if(marca=="FelipeLamparas")
+ 			{
+ 				descuento=10;
+ 			}else
+ 			{
+ 				descuento=5;
+ 			}
+ 	}
+ 	/*var cantidadL;
  	var precioBruto;
  	var descuento;
  	var resultado;
  	document.getElementById('Cantidad').value=cantidadL;
  	
- 	precioBruto=cantidadL*35
+ 	precioBruto=cantidadL*35;
  	
- 	descuento=0
+ 	descuento=0;
  	
 
  	if(cantidadL>5)
@@ -35,6 +79,7 @@ function CalcularPrecio ()
  		}
  	resultado=precioBruto- precioBruto *descuento/100;
  	resultado=document.getElementById('precioDescuento').value;
- 	}
-
+ 	}*/
+ 	resultado=precioBruto-(precioBruto*descuento)/100;
+ 	document.getElementById('precioDescuento').value=resultado;
 }
