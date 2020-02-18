@@ -10,76 +10,80 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-	var cantidadL;
- 	var precioBruto;
- 	var descuento;
- 	var resultado;
- 	var marca;
- 	var impuesto;
+	var cantidadLamparas;
+	var marca;
+	var precioBruto;
+	var descuento;
+	var precioDescuento;
 
- 	marca=document.getElementById('Marca').value;
- 	cantidadL=document.getElementById('Cantidad').value;
- 	cantidadL=parseInt(cantidadL);
- 	precioBruto=cantidadL*35;
- 	descuento=0;
+	cantidadLamparas=document.getElementById('Cantidad').value;
+	cantidadLamparas=parseInt(cantidadLamparas);
+	marca=document.getElementById('Marca').value;
+	precioBruto=cantidadLamparas*35;
+	console.info ("precio Bruto",precioBruto);
+	descuento=0;
 
- 	if(cantidadL>5)
- 	{
- 		descuento=50;
- 	}else
- 	{
- 		if(cantidadL==5&&marca=="ArgentinaLuz")
- 		{
- 			descuento=40;
- 		}else
- 		{
- 			descuento=30;
- 		}
- 		if(cantidadL==4&&marca=="ArgentinaLuz"||marca=="FelipeLamparas")
- 		{
- 			descuento=25;
- 		}else
- 		{
- 			descuento=20;
- 		}
- 		if(cantidadL==3&&marca=="ArgentinaLuz")
- 		{
- 			descuento=15;
- 		}else
- 			if(marca=="FelipeLamparas")
- 			{
- 				descuento=10;
- 			}else
- 			{
- 				descuento=5;
- 			}
- 	}
- 	/*var cantidadL;
- 	var precioBruto;
- 	var descuento;
- 	var resultado;
- 	document.getElementById('Cantidad').value=cantidadL;
- 	
- 	precioBruto=cantidadL*35;
- 	
- 	descuento=0;
- 	
+	if(cantidadLamparas>5)
+	{
+		descuento=50;
+	}else
+	{
+		if(cantidadLamparas==5)
+		{
+			if(marca=="ArgentinaLuz")
+			{
+				descuento=40;
+			}else
+			{
+				descuento=30;
+			}
+		}else
+		{
+			if(cantidadLamparas==4)
+			{
+				if(marca=="ArgentinaLuz"||marca=="FelipeLamparas")
+				{
+					descuento=25;
+				}else
+				{
+					descuento=20;
+				}
+			}else
+			{
+				if(cantidadLamparas==3)
+				{
+					if(marca=="ArgentinaLuz")
+					{
+						descuento=15;
+					}else
+					{
+						if(marca=="FelipeLamparas")
+						{
+							descuento=10;
+						}else
+						{
+							descuento=5;
+						}
+					}
+				}//if(cantidadLamparas==3)
+			}//if(cantidadLamparas==4)
+		}//if(cantidadLamparas==5)
+	}//if(cantidadLamparas>5)
 
- 	if(cantidadL>5)
- 	{
- 		descuento=50;
- 	}else
- 	{
- 		if (cantidadL==5) 
- 		{
-
- 		}else
- 		{
- 	
- 		}
- 	resultado=precioBruto- precioBruto *descuento/100;
- 	resultado=document.getElementById('precioDescuento').value;
- 	}*/
- 	resultado=precioBruto-(precioBruto*descuento)/100;
- 	document.getElementById('precioDescuento').value=resultado;
+	precioDescuento=precioBruto-precioBruto*descuento/100;
+	console.info ("Precio Con Descuento",precioDescuento);
+	document.getElementById('precioDescuento').value=precioDescuento;
+	/*debe dar:
+	6 X= 105
+	5 A= 105
+	5 X= 122,5
+	4 A||F= 105
+	4 X= 112
+	3 A= 89
+	3 F= 94,5
+	3 X= 99,75
+	no evaluar cantidad y marca al mismo tiempo.
+	console.info ("texto", var)
+	tambien se puede concatenar:
+	console.log ("Testeo"+precioBruto);*/ 
 }
