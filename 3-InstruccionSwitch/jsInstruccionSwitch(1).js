@@ -8,18 +8,18 @@ function mostrar()
 		case "Enero":
 		
 			alert ("Que comiences bien el año!");
-			brake;
+			break;
 		case "Marzo":
 		
 			alert ("A clases!");
-			brake;
+			break;
 		case "Julio":
 		
 			alert ("se vienen las vacasiones!");
-			brake;
+			break;
 		case "Diciembre":
 		
 			alert ("Felices fiestas!");
-			brake;
+			break;
 	}
 }//FIN DE LA FUNCIÓN

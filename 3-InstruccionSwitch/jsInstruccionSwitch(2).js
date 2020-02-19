@@ -8,32 +8,21 @@ function mostrar()
 	switch (mesDelAño)
 	{
 		case("Julio"):
-		{
-			alert("Abrigate");
-		}brake;
 		case("Agosto"):
 		{
 			alert("Abrigate");
-		}brake;
+		}
+		break;
 		case("Septiempre"):
-		{
-			alert("ya paso el frio");
-		}brake;
 		case("Octubre"):
-		{
-			alert("ya paso el frio");
-		}brake;
 		case("Noviembre"):
-		{
-			alert("ya paso el frio");
-		}brake;
 		case("Diciembre"):
 		{
 			alert("Ya paso el frio");
-		}brake;
+		}break;
 		default:
 		{
 			alert("Falta para el invierno");
-		}brake;
+		}break;
 	}
 }//FIN DE LA FUNCIÓN
