@@ -20,5 +20,7 @@ function mostrar()
 	si no es definido "{}"
 	o no entra nunca o entra y no sale mas 
 	3)lo que modifica lo de arriba para crear un break
-	dos cosas que confunden*/
+	dos cosas que confunden
+	1)if no es while
+	2)hay que rezonar mejor*/
 }//FIN DE LA FUNCIÓN
