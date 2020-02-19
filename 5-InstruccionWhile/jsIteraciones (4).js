@@ -1,11 +1,11 @@
 function mostrar()
 {
-	var numero;
-	numero = prompt("ingrese un número entre 0 y 9.");
-
+	var numero = prompt("ingrese un número entre 0 y 9.");
+	numero=parseInt(numero);
+	//var valorDeVerdad=isNaN(numero); o el isNaN en el while
 	//while(numero>0 && numero<9) //mal
 	//while(!(numero>0 && numero<9)) //funciona pero usa mas microprocesador al tener que negar los signos
-	while(numero<0 || numero>9) // muy bien
+	while(isNaN(numero)|| numero<0 || numero>9) // muy bien
 	{
 		numero = prompt("ingrese un número entre 0 y 9.");
 	}
