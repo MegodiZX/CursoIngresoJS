@@ -29,7 +29,7 @@ function mostrar()
 			}
 		}
 		respuesta=prompt("ingrese no para terminar");
-		document.getElementById('maximo').value=;
-		document.getElementById('minimo').value=;
+		document.getElementById('maximo').value=maximo;
+		document.getElementById('minimo').value=minimo;
 	}
 }//FIN DE LA FUNCIÓN

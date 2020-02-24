@@ -6,16 +6,16 @@ function mostrar()
 	var respuesta;
 	var numero;
 	
-	contador=0
-	acumulador=0
-	respuesta='si';
+	contador=0;
+	acumulador=0;
+	respuesta="si";
 
-	while(respuesta == "si");
+	while(respuesta=="si")
 	{
 		numero=prompt("ingrese numero");
 		numero=parseInt(numero);
 		contador=contador+1;
-		acaumulador=acumulador+numero;
+		acumulador=acumulador+numero;
 		respuesta=prompt("ingrese si para contunuar o terminara el proceso");
 	}
 

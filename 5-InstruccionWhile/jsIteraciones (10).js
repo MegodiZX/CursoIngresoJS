@@ -8,7 +8,7 @@ function mostrar()
 
 	while(respuesta!="no")
 	{
-		
+		respuesta=prompt("escribe no");
 	
 	}
 

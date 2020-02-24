@@ -9,5 +9,83 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+	var edad;
+	var sexo;
+	var estadoCivil;
+	var sueldo;
+	var legajo;
+	var nacionalidad;
+
+	edad=prompt("Ingrese edad");
+	sexo=prompt("Ingrese sexo");
+	estadoCivil=prompt("Ingrese Estado civil");
+	sueldo=prompt("Ingrese sueldo bruto");
+	legajo=prompt("Ingrese legajo");
+	nacionalidad=prompt("Ingrese nacionalidad");
+
+	while(isNaN(edad)||edad<18||edad>90)
+	{
+		edad=prompt("Ingrese edad");
+	}
+	while(sexo!="F"&&sexo!="M")
+	{
+		sexo=prompt("Ingrese sexo");
+	}
+	while(estadoCivil<1||estadoCivil>4)
+	{
+		estadoCivil=prompt("Ingrese Estado civil");
+	}
+	while(isNaN(sueldo)||sueldo<8000)
+	{
+		sueldo=prompt("Ingrese sueldo bruto");
+	}
+	while(isNaN(legajo)||legajo<1000||legajo>9999)
+	{
+		legajo=prompt("Ingrese legajo");
+	}
+	while(nacionalidad!="A"&&nacionalidad!="E"&&nacionalidad!="N")
+	{
+		nacionalidad=prompt("Ingrese nacionalidad");
+	}
+	legajo=parseInt(legajo, 10);
+	switch(estadoCivil)
+	{
+		case"1":
+		{
+			estadoCivil="Soltero/a";
+		}break;
+		case"2":
+		{
+			estadoCivil="Casado/a";
+		}break;
+		case"3":
+		{
+			estadoCivil="Divorciado/a";
+		}break;
+		case"4":
+		{
+			estadoCivil="Viudo/a";
+		}break;
+	}
+	switch(nacionalidad)
+	{
+		case"A":
+		{
+			nacionalidad="Argentino/a";
+		}break;
+		case"E":
+		{
+			nacionalidad="Extranjero/a";
+		}break;
+		case"N":
+		{
+			nacionalidad="Nacionalizado/a";
+		}break;
+	}
+	document.getElementById('Edad').value=edad;
+	document.getElementById('Sexo').value=sexo;
+	document.getElementById('EstadoCivil').value=estadoCivil;
+	document.getElementById('Sueldo').value=sueldo;
+	document.getElementById('Legajo').value=legajo;
+	document.getElementById('Nacionalidad').value=nacionalidad;
 }

@@ -5,7 +5,7 @@ function mostrar()
 	var acumulador=0;
 	var numero;
 
-	while(isNaNcontador<5)
+	while(isNaN(numero)||contador<5)
 	{
 		numero=prompt("ingrese numero");
 		numero=parseInt(numero);
