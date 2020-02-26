@@ -17,37 +17,38 @@ function ComenzarIngreso ()
 	var nacionalidad;
 
 	edad=prompt("Ingrese edad");
-	sexo=prompt("Ingrese sexo");
-	estadoCivil=prompt("Ingrese Estado civil");
-	sueldo=prompt("Ingrese sueldo bruto");
-	legajo=prompt("Ingrese legajo");
-	nacionalidad=prompt("Ingrese nacionalidad");
-
 	while(isNaN(edad)||edad<18||edad>90)
 	{
 		edad=prompt("Ingrese edad");
 	}
+	sexo=prompt("Ingrese sexo");
 	while(sexo!="F"&&sexo!="M")
 	{
 		sexo=prompt("Ingrese sexo");
 	}
+	estadoCivil=prompt("Ingrese Estado civil");
 	while(isNaN(estadoCivil)||estadoCivil<1||estadoCivil>4)
 	{
 		estadoCivil=prompt("Ingrese Estado civil");
 	}
+	sueldo=prompt("Ingrese sueldo bruto");
 	while(isNaN(sueldo)||sueldo<8000)
 	{
 		sueldo=prompt("Ingrese sueldo bruto");
 	}
+	legajo=prompt("Ingrese legajo");
 	while(isNaN(legajo)||legajo<1000||legajo>9999)
 	{
 		legajo=prompt("Ingrese legajo");
 	}
+	legajo=parseInt(legajo, 10);
+
+	nacionalidad=prompt("Ingrese nacionalidad");
 	while(nacionalidad!="A"&&nacionalidad!="E"&&nacionalidad!="N")
 	{
 		nacionalidad=prompt("Ingrese nacionalidad");
 	}
-	legajo=parseInt(legajo, 10);
+	
 	switch(estadoCivil)
 	{
 		case"1":
@@ -88,4 +89,6 @@ function ComenzarIngreso ()
 	document.getElementById('Sueldo').value="sueldo: "+sueldo;
 	document.getElementById('Legajo').value="legajo: "+legajo;
 	document.getElementById('Nacionalidad').value="Nacionalidad: "+nacionalidad;
+	/*siempre sa toma dato y valida, no se toman todos a la vez
+	hacer toda la validacion primero, luego hacer la logica*/
 }
