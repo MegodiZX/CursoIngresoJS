@@ -31,7 +31,7 @@ function ComenzarIngreso ()
 	{
 		sexo=prompt("Ingrese sexo");
 	}
-	while(estadoCivil<1||estadoCivil>4)
+	while(isNaN(estadoCivil)||estadoCivil<1||estadoCivil>4)
 	{
 		estadoCivil=prompt("Ingrese Estado civil");
 	}
@@ -82,10 +82,10 @@ function ComenzarIngreso ()
 			nacionalidad="Nacionalizado/a";
 		}break;
 	}
-	document.getElementById('Edad').value=edad;
-	document.getElementById('Sexo').value=sexo;
-	document.getElementById('EstadoCivil').value=estadoCivil;
-	document.getElementById('Sueldo').value=sueldo;
-	document.getElementById('Legajo').value=legajo;
-	document.getElementById('Nacionalidad').value=nacionalidad;
+	document.getElementById('Edad').value="Edad: "+edad;
+	document.getElementById('Sexo').value="Sexo: "+sexo;
+	document.getElementById('EstadoCivil').value="Estado Civil: "+estadoCivil;
+	document.getElementById('Sueldo').value="sueldo: "+sueldo;
+	document.getElementById('Legajo').value="legajo: "+legajo;
+	document.getElementById('Nacionalidad').value="Nacionalidad: "+nacionalidad;
 }
