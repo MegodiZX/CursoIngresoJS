@@ -1,7 +1,14 @@
 function mostrar()
 {
+	var repeticiones;
+	var i;
 
-var repetciones = prompt("ingrese el número de repeticiones");
+	repeticiones=prompt("ingrese el número de repeticiones");
+
+	for(i=0;i<repeticiones;i)
+	{
+		document.write("algo <br>")//document(html)write(texto) se tresnmite en lenguaje html (<br> es tab de html)
+	}
 
 
 

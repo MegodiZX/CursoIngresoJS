@@ -17,29 +17,37 @@ function ComenzarIngreso ()
 	var nacionalidad;
 
 	edad=prompt("Ingrese edad");
+	edad=parseInt(edad);
 	while(isNaN(edad)||edad<18||edad>90)
 	{
 		edad=prompt("Ingrese edad");
+		edad=parseInt(edad);
 	}
 	sexo=prompt("Ingrese sexo");
-	while(sexo!="F"&&sexo!="M")
+	while(sexo!="F"&&sexo!="M"&&sexo!="f"&&sexo!="m")
 	{
 		sexo=prompt("Ingrese sexo");
 	}
 	estadoCivil=prompt("Ingrese Estado civil");
+	estadoCivil=parseInt(estadoCivil);
 	while(isNaN(estadoCivil)||estadoCivil<1||estadoCivil>4)
 	{
 		estadoCivil=prompt("Ingrese Estado civil");
+		estadoCivil=parseInt(estadoCivil);
 	}
 	sueldo=prompt("Ingrese sueldo bruto");
+	sueldo=parseInt(sueldo);
 	while(isNaN(sueldo)||sueldo<8000)
 	{
 		sueldo=prompt("Ingrese sueldo bruto");
+		sueldo=parseInt(sueldo);
 	}
 	legajo=prompt("Ingrese legajo");
+	legajo=parseInt(legajo);
 	while(isNaN(legajo)||legajo<1000||legajo>9999)
 	{
 		legajo=prompt("Ingrese legajo");
+		legajo=parseInt(legajo);
 	}
 	legajo=parseInt(legajo, 10);
 
@@ -90,5 +98,7 @@ function ComenzarIngreso ()
 	document.getElementById('Legajo').value="legajo: "+legajo;
 	document.getElementById('Nacionalidad').value="Nacionalidad: "+nacionalidad;
 	/*siempre sa toma dato y valida, no se toman todos a la vez
-	hacer toda la validacion primero, luego hacer la logica*/
+	hacer toda la validacion primero, luego hacer la logica
+	Como lo hize funciona, pero siempre que sea numero se poner parseInt
+	isNaN (numeros) !isNaN (palabras)*/
 }
