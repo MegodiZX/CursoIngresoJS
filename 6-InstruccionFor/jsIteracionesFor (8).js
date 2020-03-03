@@ -20,5 +20,8 @@ function mostrar()
 	if(contador==0)
 	{
 		alert(numero+" es primo");
+	}else
+	{
+		alert(numero+" no es primo");
 	}
 }//FIN DE LA FUNCIÓN
