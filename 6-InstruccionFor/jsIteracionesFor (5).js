@@ -1,10 +1,13 @@
 function mostrar()
 {	
-	var i
-	for(i=0;i<10;i++)
+	var i;
+	var numero;
+
+	for(i=0;numero!=9;i++)
 	{
-		document.write(i+ "<br>");
+		numero=prompt("Ingrese 9")
 	}
+	document.write("fueron "+i+" intentos");
 
 
 

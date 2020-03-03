@@ -5,17 +5,13 @@ function mostrar()
 	var detener;
 	detener=4
 	
-	for(i=0;i<100;i++)
+	for(i=0;aleatorio!=detener;i++)
 	{
 		aleatorio= Math.floor((Math.random() * 10) + 1);
 		if(detener==aleatorio)
 		{
 			break;
 		}
-		console.log(i);
+		document.write(i+"<br>");
 	}
-	alert("fin");
-
-	
-
 }//FIN DE LA FUNCIÓN
