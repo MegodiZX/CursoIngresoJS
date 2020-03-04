@@ -47,7 +47,7 @@ function mostrar()
 			{
 				nombre=prompt("ingrese nombre");
 			}
-			while(!isNaN);
+			while(!isNaN(nombre));
 
 			cantidadDePersonas=prompt("ingrese Cantidad de personas");
 			cantidadDePersonas=parseInt(cantidadDePersonas)
@@ -135,7 +135,6 @@ function mostrar()
 
 		document.write("<br> Nombre del huesped con mas invitados:"+ maximoPersonasNombre);
 		document.write("<br> Cantidad de personas que se quedaron mas dias:"+ maximoDeDiasCantidadDePersonas);
-		document.write("<br> Forma de pago mas utilizada"+ formaDePagoMasUtilizada);
+		document.write("<br> Forma de pago mas utilizada: "+ formaDePagoMasUtilizada);
 		document.write("<br> promedio:"+ promedio);
-
 }

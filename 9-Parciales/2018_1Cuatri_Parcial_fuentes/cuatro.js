@@ -2,6 +2,7 @@ function mostrar()
 {
 	var numeroUno;
 	var numeroDos;
+	var resultado;
 	numeroUno=prompt("ingrese un numero");
 	numeroUno=parseInt(numeroUno);
 	numeroDos=prompt("ingrese otro numero");
@@ -9,15 +10,22 @@ function mostrar()
 
 	if(numeroUno==numeroDos)
 	{
-		alert (numeroUno+" "+numeroDos);
+		resultado=numeroUno+" y "+numeroDos;
+		alert (resultado);
 	}else
 	{
 		if(numeroUno>numeroDos)
 		{
-			alert (numeroUno-numeroDos);
+			resultado=numeroUno-numeroDos;
+			alert (resultado);
 		}else
 		{
-			alert (numeroUno+numeroDos);
+			resultado=numeroUno+numeroDos
+			alert (resultado);
+			if(resultado>10)
+			{
+				alert("La suma es "+resultado+" y supero el 10");
+			}
 		}
 	}
 }
