@@ -23,7 +23,7 @@ function mostrar()
 	cantidadDeNumeroPositivo=0;
 	sumaDeNumeroPositivo=0;
 	sumaDeNumerosNegativos=0;
-	bandera=0;
+	bandera="papa";
 	numeroMinimo=0;
 	numeroMaximo=0;
 
@@ -31,7 +31,6 @@ function mostrar()
 
 	while(respuesta=="si")
 	{
-		bandera++;
 		do
 		{
 			letra=prompt("ingrese letra");
@@ -60,12 +59,13 @@ function mostrar()
 		{
 			sumaDeNumerosNegativos=numero+sumaDeNumerosNegativos;
 		}
-		if(bandera==1)
+		if(bandera=="papa")
 		{
 			numeroMaximo=numero;
 			letraMaximo=letra;
 			numeroMinimo=numero;
 			letraMinimo=letra;
+			bandera="pepino"
 		}else
 		{
 			if(numeroMaximo<numero)
@@ -84,5 +84,5 @@ function mostrar()
 	}//fin de while
 
 	promedioNumeroPositivo=sumaDeNumeroPositivo/cantidadDeNumeroPositivo;
-	document.write("cantidad de numeros pares "+contadorPares+"<br>"+"cantidad de numeros impares "+contadorImpares+"<br>"+"promedio de numeros positivos"+ promedioNumeroPositivo+"<br> sumaDeNumerosNegativos "+sumaDeNumerosNegativos+"<br> Numero Maximo "+numeroMaximo +" y su letra "+letraMaximo+"<br> Numero letraMinimo "+numeroMinimo +" y su letra "+letraMinimo);
+	document.write("cantidad de numeros pares "+contadorPares+"<br>"+"cantidad de numeros impares "+contadorImpares+"<br>"+"promedio de numeros positivos"+ promedioNumeroPositivo+"<br> sumaDeNumerosNegativos "+sumaDeNumerosNegativos+"<br> Numero Maximo "+numeroMaximo +" y su letra "+letraMaximo+"<br> Numero Minimo "+numeroMinimo +" y su letra "+letraMinimo);
 }
